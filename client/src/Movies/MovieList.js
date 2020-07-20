@@ -15,9 +15,13 @@ function MovieDetails({ movie }) {
 	const { path } = useRouteMatch();
 	const history = useHistory();
 
+	const clickerRoute = (id) => {
+		history.push(`${path}${id}`);
+	};
+
 	const { title, director, metascore } = movie;
 	return (
-		<div className="movie-card">
+		<div className="movie-card" onClick={() => clickerRoute(movie.id)}>
 			<h2>{title}</h2>
 			<div className="movie-director">
 				Director: <em>{director}</em>
