@@ -41,7 +41,7 @@ const App = () => {
 			{/* <div>Replace this Div with your Routes</div> */}
 			<Switch>
 				<Route path="/movies/:id">
-					<Movie />
+					<Movie movies={movieList} />
 				</Route>
 
 				<Route path="/">
