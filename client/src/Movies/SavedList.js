@@ -1,5 +1,4 @@
 import React from "react";
-import MovieList from "./MovieList";
 import { Link, Route } from "react-router-dom";
 
 const SavedList = (props) => (
